@@ -1,0 +1,364 @@
+*{
+margin :0;
+padding: 0;font-family: 'Poppins' , sans-serif;
+box-sizing: border-box;
+
+}
+
+ :root{
+    --primary-color: #fff;
+    --secondary-color: #080808;
+}  
+.ligth-theme{
+    --primary-color: #080808;
+    --secondary-color: #fff;
+} 
+
+
+#logo{
+   width: 30px;
+ 
+}
+
+/*body{
+ background-image: url(ggs.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+
+}*/
+body{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#Header{
+ width: 100%;
+ height: 100vh;
+
+ background-image: url(src/Pic-removebg-preview.png);
+padding-left: 8%;
+ background-position: 90%;
+ background-repeat: no-repeat;
+}
+
+.container{
+    padding: 1px 2%;
+    justify-content: left;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+       display: inline-block;
+       list-style: none;
+       margin: 10px 20px;
+}
+
+nav ul li a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #9e0d0d;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.hearder-text{
+    width: 50%;
+    margin-top: 20%;
+    font-size: 30px;
+   
+}
+
+.hearder-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+   
+}
+.hearder-text h1 span{
+    color: #9e0d0d;
+}
+
+/*-------------------- about pre ---------------> */
+
+#about{
+    
+    padding: 100px 0;
+    color: var(--primary-color);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+   
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #9e0d0d;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-links::after{
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span{
+    color: #e26b6b;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/*-----------------Technical bagground-----------*/
+
+.technical{
+    padding: 50px 0;
+}
+
+.technical-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    color: #fff;
+}
+
+.technical-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.technical-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.technical-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.technical-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.technical-list div:hover{
+    background: #9e0d0d;
+    transform: translateY(-10px);
+}
+
+/*-----------------Hobby-----------*/
+
+#hobbies{
+    padding: 50px 0;
+}
+
+ h4{
+    padding : 40px 0;
+    text-align: center;
+}
+
+.playlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.dota2{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dota2 img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: tranform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #9e0d0d);
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #fd1d64;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.dota2:hover img{
+    transform: scale(1.1);
+}
+
+.dota2:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width:fit-content;
+    border: 1px solid #9e0d0d;
+    padding:14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #9e0d0d;
+}
+
+/*-----------------Hobby-----------*/
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #9e0d0d;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: var(--primary-color);
+    display: inline-block;
+    transition: transform 0.5 ;
+}
+
+.social-icons a:hover{
+    color: #9e0d0d;
+    transform: translateY(-5px);
+}
+
+.footer{
+    background-color: #262626;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
