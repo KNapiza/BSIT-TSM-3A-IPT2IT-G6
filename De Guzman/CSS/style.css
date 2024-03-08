@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+        background: #f5f5dc;
+        color: black;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 1000%;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5dc;
+    animation:showRight 5s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.9;
+    color : #A6D874
+}
+
+.home-content h3::before {
+content: '';
+position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5dc;
+    animation:showRight 2s ease forwards;
+    animation-delay: 0.6s;
+}
+.home-content p {
+    position: relative;
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home-content p::before {
+    content: '';
+position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5dc;
+    animation:showRight 2s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: #d8d874;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;   
+}
+
+.logo {
+    font-size: 25px;
+    color: #D8A674;
+    text-decoration:underline;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px; 
+    transition: 1s;
+}
+
+.navbar a:hover {
+    color:#7474D8;
+}
+
+.rounded-pic img{
+    position: relative;   
+    border-radius: 50%;
+    margin-left: 130px;
+}
+.Aboutme {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.pclass {
+    text-align:justify;
+    padding-left:35%;
+    max-width:1000px ;
+}
+
+.aboutimg img{
+    border-radius: 35px;
+    max-width: 30%;
+    float: left;
+    align-content:space-between;
+}
+.line {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    flex-basis: 35%;
+    align-items: center;
+    padding-bottom: 20%;
+}
+
+
+.head2 {
+    font-size: 50px;
+    font-weight: 600;
+    padding-left: 40%;
+}
+
+.hobby-title h1{
+    text-align: center;
+}
+
+.hobby-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .hobby-info-left
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .hobby-info-left{
+      width: 110%;
+      padding: 0 20px;
+  }
+  
+  .hobby-container {
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 50%;
+  }
+  
+  .hobby {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .game-text {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    height: 98%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hobby-container:hover .game-text {
+    opacity: 5;
+  }
+
+.home-sci {
+    position:absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    color: #D8A674;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid#D8A674;
+    border-radius: 50%;
+    font-size: 20px;
+    color :#D8A674;
+    text-decoration: none;
+    
+}
+
+
+@keyframes showRight {
+    100%{
+        width: 0;
+    }
+}
