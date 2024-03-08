@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Clone</title>
     <link rel="stylesheet" href="./Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -18,21 +20,28 @@
     <div class="navigation">
       <ul>
         <li>
-          <a href="#">
+          <a href="#Home">
             <span class="fa fa-home"></span>
             <span>Home</span>
           </a>
         </li>
 
         <li>
-          <a href="#">
+          <a href="#About Me">
             <span class="fa fa-user-alt"></span>
             <span>About Me</span>
           </a>
         </li>
 
         <li>
-          <a href="#">
+          <a href="#Contact">
+            <span class="fa fa-phone"></span>
+            <span>Contact</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#Hobbies">
             <span class="fa fas fa-book"></span>
             <span>Hobbies</span>
           </a>
@@ -43,19 +52,12 @@
     <div class="navigation">
       <ul>
         <li>
-          <a href="#">
+          <a href="#Spotify Playlist">
             <span class="fa fas fa-plus-square"></span>
             <span>Spotify Playlist</span>
           </a>
         </li>
 
-        <li>
-          <a href="#">
-            <span class="fa fas fa-heart"></span>
-            <span>Liked Songs</span>
-          </a>
-        </li>
-      </ul>
     </div>
 
     <div class="policies">
@@ -81,7 +83,7 @@
         <ul>
           <li class="divider">|</li>
           <li>
-            <a href="#">Sign Up</a>
+            <a href="https://www.facebook.com/karl.napiza.5/">FACEBOOK</a>
           </li>
         </ul>
         <button type="button">Log In</button>
@@ -90,23 +92,26 @@
 
   <br>
     <div>
-      <section class="sec-des" id="Home">
+      <section class="Home" id="Home">
         <div class="sec-des-left">
-          <h1>Welcome to my Portfolio</h1>
+          <h1>Welcome to my Webpage</h1>
           <br>
           <img src="Images/IMG_8400.JPG" alt="Me">
+        </br>
       </section>
+    </div>
     </br>
-      <section class="sec-des" id="About Me">
+      <section class="about me" id="About Me">
         <div class="sec-des-left">
             <h3>About Me</h3>
             <br>
             <p>
               Hello I'm Noel karl Napiza and I'm thrilled to Welcome you in my little corner of web. Currently navigating my way through the Tarlac State University journey, I'm a third year college student taking the degree of Bachelore of Science in Information Technology Specialize in Technical Service Management. Each day is a new adventure in learning and discovery. Beyond my student life When I'm not buried in studying, you'll find of me being a Musician playing as the Drummer Guitarist and sometime Bassist in my different bands and also a solo performer and vocalist, I find joy in my passions and hobbies.
               I aspire to be in the three Tri Bureau after i graduated in taking my degree. My academic pursuits are driven by a curiosity to explore and make a positive impact. Currently, I'm diving into my Capstone project where I get to develop and integrate our proposed title. It's a hands-on experience that aligns with my student life. I'm a member of the Artist Circle El Musikeros where we take events and show our passion in music as we perform and entertain audience. Being part of this community has enriched my college experience in ways I never imagined. Let's connect! Whether you want to chat about our shared classes or swap stories about navigating college life, I'm all ears. Feel free to reach out my social media platforms and email. </p>
+        </div>
     </section>
     <br>
-    <section class="sec-des exp" id="Contact">
+    <section class="contact" id="Contact">
         <div class="sec-des-left exp-left">
             <h3>Contact</h3>
             <br>
@@ -117,9 +122,11 @@
             FACEBOOK: Noel Karl Napiza<br>
             Phone: +639814607021
         </address>
+        </div>
     </section>
   </br>
     <section class="Hobbies" id="Hobbies">
+      <div>
       <h3>Hobbies and Passions</h3>
       <br>
       <ul>
@@ -129,10 +136,10 @@
           <li>Singing</Li>
           <li>Driving</li>
       </ul>
+      </div>
     </section>
-    </div>
 
-    <div class="spotify-playlists">
+    <div class="spotify-playlists" id="Spotify Playlist">
       <h3>Spotify Playlists</h3>
 
       <div class="list">
@@ -165,11 +172,11 @@
 
     <div class="preview">
       <div class="text">
-        <h6>Preview of Spotify</h6>
+        <h6>Preview of Napizafy</h6>
         <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
       </div>
       <div class="button">
-        <button type="button">Sign up free</button>
+        <button onclick="history.back()">Go Back</button>
       </div>
     </div>
   </div>
